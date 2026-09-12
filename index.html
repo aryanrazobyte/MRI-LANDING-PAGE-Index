@@ -1,0 +1,1553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced MRI Scan in Gurugram | MDRC</title>
+    <meta
+      name="description"
+      content="Advanced MRI Scan in Gurugram with advanced imaging technology and expert radiology support at MDRC."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+:root {
+  --primary: #0879b8;
+  --primary-dark: #05618f;
+  --primary-light: #eef8fc;
+  --whatsapp: #25d366;
+  --dark: #102a43;
+  --text: #53657a;
+  --border: #e5edf2;
+  --light: #f6fafc;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #172b4d;
+  background: var(--white);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+.container {
+  width: min(1180px, 92%);
+  margin: 0 auto;
+}
+
+.eyebrow {
+  display: inline-block;
+  color: var(--primary);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+h1, h2, h3 {
+  color: var(--dark);
+  font-weight: 700;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(10px);
+}
+
+.header-inner {
+  min-height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logo img {
+  width: 220px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn,
+.btn-book,
+.header-call,
+.header-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 46px;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover,
+.btn-book:hover,
+.header-call:hover,
+.header-whatsapp:hover {
+  transform: translateY(-1px);
+}
+
+.btn-book,
+.header-call {
+  background: var(--primary);
+}
+
+.btn-book:hover,
+.header-call:hover {
+  background: var(--primary-dark);
+  box-shadow: 0 8px 20px rgba(8, 121, 184, 0.22);
+}
+
+.header-whatsapp {
+  background: var(--whatsapp);
+}
+
+.header-whatsapp:hover {
+  background: #1ebe5d;
+}
+
+.header-call img,
+.header-whatsapp img {
+  width: 18px;
+  height: 18px;
+  filter: brightness(0) invert(1);
+}
+
+.hero {
+  background: linear-gradient(120deg, #eef8fc 0%, #ffffff 68%);
+  padding: 64px 0 72px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.hero h1 {
+  margin-bottom: 16px;
+  font-size: 56px;
+  line-height: 1.08;
+  letter-spacing: -1.4px;
+}
+
+.hero h1 span {
+  color: var(--primary);
+}
+
+.hero-description {
+  max-width: 520px;
+  color: var(--text);
+  font-size: 18px;
+}
+
+.hero-buttons {
+  margin-top: 28px;
+}
+
+.hero-trust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 24px;
+  margin-top: 28px;
+  color: #3e5568;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.check-icon {
+  color: var(--primary);
+  margin-right: 4px;
+}
+
+.hero-visual {
+  position: relative;
+}
+
+.hero-image-wrapper,
+.intro-visual {
+  overflow: hidden;
+  border-radius: 20px;
+  background: #dceff7;
+  box-shadow: 0 22px 50px rgba(8, 121, 184, 0.12);
+}
+
+.hero-image-wrapper img {
+  width: 100%;
+  aspect-ratio: 7 / 6;
+  object-fit: cover;
+}
+
+.hero-badge {
+  position: absolute;
+  left: -16px;
+  bottom: 22px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(16, 42, 67, 0.12);
+}
+
+.badge-icon {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  background: var(--primary);
+  border-radius: 50%;
+  font-weight: 700;
+}
+
+.hero-badge small {
+  display: block;
+  color: var(--text);
+  font-size: 12px;
+}
+
+.trust-strip {
+  background: var(--primary);
+  color: #fff;
+}
+
+.trust-strip-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.trust-item {
+  min-height: 108px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  text-align: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.trust-item:last-child {
+  border-right: 0;
+}
+
+.trust-number {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.trust-label {
+  max-width: 180px;
+  font-size: 13px;
+  opacity: 0.92;
+}
+
+.section {
+  padding: 72px 0;
+}
+
+.section-light {
+  background: var(--light);
+}
+
+.section-blue-light {
+  background: var(--primary-light);
+}
+
+.center-heading {
+  max-width: 700px;
+  margin: 0 auto 36px;
+  text-align: center;
+}
+
+.center-heading h2,
+.section-heading h2 {
+  margin-top: 8px;
+  font-size: 38px;
+  line-height: 1.18;
+}
+
+.center-heading p {
+  margin-top: 12px;
+  color: var(--text);
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.intro-content {
+  color: var(--text);
+}
+
+.intro-content p + p {
+  margin-top: 14px;
+}
+
+.content-points {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.content-point {
+  padding: 14px;
+  background: var(--primary-light);
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+.intro-visual img {
+  width: 100%;
+  min-height: 340px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.mri-scans-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.mri-scan-card,
+.feature-card,
+.step-card,
+.location-card,
+.simple-service,
+.doctor-card {
+  background: #fff;
+  border: 1px solid #dcecf3;
+  border-radius: 14px;
+}
+
+.mri-scan-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  min-height: 132px;
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mri-scan-card:hover,
+.feature-card:hover,
+.step-card:hover,
+.simple-service:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(12, 71, 98, 0.08);
+}
+
+.mri-scan-icon,
+.feature-icon,
+.step-icon {
+  display: grid;
+  place-items: center;
+  background: var(--primary-light);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.mri-scan-icon {
+  flex: 0 0 72px;
+  width: 72px;
+  height: 72px;
+}
+
+.mri-scan-icon img {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+}
+
+.mri-scan-content h3 {
+  font-size: 17px;
+}
+
+.mri-scan-content p {
+  margin-top: 6px;
+  color: var(--text);
+  font-size: 13px;
+}
+
+.section-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.feature-card {
+  display: flex;
+  gap: 14px;
+  padding: 22px;
+}
+
+.feature-icon {
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+}
+
+.feature-icon img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
+.feature-card h3 {
+  margin-bottom: 4px;
+  font-size: 16px;
+}
+
+.feature-card p {
+  color: var(--text);
+  font-size: 13px;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.step-card {
+  position: relative;
+  padding: 24px;
+}
+
+.step-number {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  color: #b6dbe9;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.step-icon {
+  width: 52px;
+  height: 52px;
+  margin-bottom: 18px;
+  border-radius: 50%;
+}
+
+.step-icon img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.step-card h3 {
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.step-card p {
+  color: var(--text);
+  font-size: 14px;
+}
+
+.doctor-slider {
+  position: relative;
+  padding: 0 8px;
+}
+
+.doctor-grid {
+  display: flex;
+  gap: 18px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.doctor-grid::-webkit-scrollbar {
+  display: none;
+}
+
+.doctor-card {
+  flex: 0 0 260px;
+  overflow: hidden;
+  scroll-snap-align: start;
+}
+
+.doctor-photo {
+  aspect-ratio: 2.5 / 3;
+  background: var(--primary-light);
+}
+
+.doctor-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.doctor-info {
+  padding: 16px;
+}
+
+.doctor-info h3 {
+  font-size: 16px;
+}
+
+.doctor-info p {
+  margin-top: 4px;
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.doctor-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  width: 42px;
+  height: 42px;
+  border: 0;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--primary);
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.14);
+  transform: translateY(-50%);
+}
+
+.doctor-arrow-left { left: -8px; }
+.doctor-arrow-right { right: -8px; }
+
+.location-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.location-card {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 42% 58%;
+}
+
+.location-image {
+  min-height: 220px;
+  background: var(--primary-light);
+}
+
+.location-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.location-content {
+  padding: 24px;
+}
+
+.location-label {
+  color: var(--primary);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+}
+
+.location-content h3 {
+  margin: 8px 0;
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.location-content p {
+  color: var(--text);
+  font-size: 14px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+.simple-service {
+  width: 100%;
+  padding: 16px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  appearance: none;
+}
+
+.simple-service-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.simple-service span {
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  color: var(--dark);
+}
+
+.final-cta {
+  color: #fff;
+  background: linear-gradient(120deg, #0879b8, #07567f);
+}
+
+.services-cta {
+  margin-top: 40px;
+}
+
+.section:has(.services-cta) {
+  padding-bottom: 0;
+}
+
+.final-cta-inner {
+  min-height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 48px 0;
+}
+
+.final-cta h2 {
+  max-width: 620px;
+  color: #fff;
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.final-cta p {
+  max-width: 560px;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.final-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.btn-white-book {
+  background: #fff;
+  color: var(--primary);
+}
+
+.btn-white-book:hover {
+  background: #f4fbff;
+  color: var(--primary-dark);
+}
+
+.section-dark {
+  color: #fff;
+  background: var(--dark);
+  padding: 48px 0;
+}
+
+.trust-image-grid {
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.trust-image-wrapper {
+  height: 280px;
+  overflow: hidden;
+  border-radius: 14px;
+  background: var(--primary-light);
+}
+
+.trust-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.eyebrow-light {
+  color: #7dd3f7;
+}
+
+.trust-content h2 {
+  margin-top: 8px;
+  color: #fff;
+  font-size: 32px;
+}
+
+.trust-list {
+  list-style: none;
+  margin-top: 16px;
+}
+
+.trust-list li {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.faq-container {
+  max-width: 850px;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--border);
+}
+
+.faq-item:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.faq-item summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 0;
+  color: var(--dark);
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-plus {
+  color: var(--primary);
+  font-size: 22px;
+}
+
+.faq-item[open] .faq-plus {
+  transform: rotate(45deg);
+}
+
+.faq-item p {
+  padding: 0 36px 18px 0;
+  color: var(--text);
+  font-size: 14px;
+}
+
+.footer {
+  background: #f2f2f2;
+  padding: 18px 0;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.footer-logo img {
+  width: 150px;
+}
+
+.footer-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.footer-link {
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.footer p {
+  color: #000;
+  font-size: 13px;
+}
+
+.booking-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: rgba(16, 42, 67, 0.55);
+}
+
+.booking-overlay[hidden] {
+  display: none;
+}
+
+.booking-modal {
+  position: relative;
+  width: min(560px, 100%);
+  max-height: 92vh;
+  overflow: auto;
+  padding: 28px 24px 24px;
+  background: #fff;
+  border-radius: 16px;
+}
+
+.booking-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  border: 0;
+  background: transparent;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.booking-modal h2 {
+  margin: 8px 0 6px;
+  font-size: 26px;
+}
+
+.booking-lead {
+  margin-bottom: 18px;
+  color: var(--text);
+  font-size: 14px;
+}
+
+.booking-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.booking-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.booking-full,
+.booking-submit {
+  grid-column: 1 / -1;
+}
+
+.booking-success {
+  text-align: center;
+  padding: 20px 8px;
+}
+
+.booking-success p {
+  margin: 10px 0 20px;
+  color: var(--text);
+}
+
+.mobile-sticky-cta {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .hero-grid,
+  .intro-grid,
+  .trust-image-grid,
+  .location-grid,
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .steps-grid,
+  .mri-scans-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .header-inner,
+  .footer-inner,
+  .final-cta-inner,
+  .trust-strip-grid,
+  .content-points,
+  .services-grid,
+  .steps-grid,
+  .mri-scans-grid,
+  .booking-form {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  .header-inner,
+  .footer-meta,
+  .hero-content,
+  .center-heading,
+  .intro-copy,
+  .final-cta-inner {
+    text-align: center;
+    align-items: center;
+  }
+
+  .logo img {
+    width: 176px;
+  }
+
+  .location-card {
+    grid-template-columns: 1fr;
+  }
+
+  body {
+    padding-bottom: 76px;
+  }
+
+  .mobile-sticky-cta {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1200;
+    display: flex;
+    gap: 8px;
+    padding: 10px 12px;
+    background: #fff;
+    border-top: 1px solid var(--border);
+  }
+
+  .mobile-sticky-cta .header-call,
+  .mobile-sticky-cta .btn-book {
+    flex: 1;
+  }
+
+  .site-header .btn-book {
+    display: none;
+  }
+}
+
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="https://www.mdrcindia.com/" class="logo">
+          <img src="./images/images.png" alt="Modern Diagnostic & Research Centre" />
+        </a>
+        <div class="header-actions">
+          <button type="button" class="btn-book" data-open-booking>Book Now</button>
+          <a href="tel:01246712000" class="header-call">
+            <img src="./images/call.png" alt="" />
+            <span>Call Now</span>
+          </a>
+          <a href="https://wa.me/918586988847" class="header-whatsapp" target="_blank" rel="noopener noreferrer">
+            <img src="./images/whatsapp.png" alt="" />
+            <span>WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <h1>Advanced MRI Scan <span>in Gurugram</span></h1>
+            <p class="hero-description">
+              High-precision MRI imaging with advanced 3T technology and expert radiologists.
+            </p>
+            <div class="hero-buttons">
+              <button type="button" class="btn-book" data-open-booking>Book Now</button>
+            </div>
+            <div class="hero-trust">
+              <div><span class="check-icon">✓</span> 3T MRI Technology</div>
+              <div><span class="check-icon">✓</span> Expert Radiologists</div>
+              <div><span class="check-icon">✓</span> Advanced Imaging</div>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-image-wrapper">
+              <img src="./images/heroSectionImage.png" alt="Advanced MRI scan in Gurugram" width="700" height="600" />
+            </div>
+            <div class="hero-badge">
+              <span class="badge-icon">+</span>
+              <div>
+                <strong>3T MRI</strong>
+                <small>Advanced Imaging</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-strip">
+        <div class="container trust-strip-grid">
+          <div class="trust-item"><span class="trust-number">41+</span><span class="trust-label">Years of Diagnostic Excellence</span></div>
+          <div class="trust-item"><span class="trust-number">25+</span><span class="trust-label">Diagnostic Labs</span></div>
+          <div class="trust-item"><span class="trust-number">1 Cr+</span><span class="trust-label">Patients Served</span></div>
+          <div class="trust-item"><span class="trust-number">NABL & NABH</span><span class="trust-label">Accredited</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container intro-grid">
+          <div class="intro-copy">
+            <div class="section-heading">
+              <h2>MRI Scan in Gurugram</h2>
+            </div>
+            <div class="intro-content">
+              <p>
+                Get access to advanced MRI scanning in Gurugram with high-quality imaging and accurate diagnostic support. MRI uses powerful magnetic fields and radio waves to create detailed images of organs, tissues, joints, and other structures inside the body.
+              </p>
+              <p>
+                At MDRC, every scan is performed in a calm, patient-friendly setting and reported by experienced radiologists. Whether your doctor has advised a brain, spine, joint, abdomen, or vascular study, 3T MRI helps deliver clear answers without ionizing radiation—so treatment decisions can be made with confidence.
+              </p>
+              <div class="content-points">
+                <div class="content-point"><span class="check-icon">✓</span> Advanced MRI Technology</div>
+                <div class="content-point"><span class="check-icon">✓</span> Experienced Radiology Team</div>
+                <div class="content-point"><span class="check-icon">✓</span> Patient-focused Experience</div>
+              </div>
+            </div>
+          </div>
+          <div class="intro-visual">
+            <img src="./images/indian-mri-scan.jpg" alt="Indian patient undergoing an MRI scan" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-light">
+        <div class="container">
+          <div class="center-heading">
+            <span class="eyebrow">MRI SERVICES</span>
+            <h2>Other MRI Scans</h2>
+            <p>Our MRI services cover a wide range of diagnostic imaging needs with advanced technology and expert care.</p>
+          </div>
+          <div class="mri-scans-grid">
+            <article class="mri-scan-card">
+              <div class="mri-scan-icon"><img src="./images/icons/brainMRI.png" alt="" /></div>
+              <div class="mri-scan-content">
+                <h3>Brain MRI</h3>
+                <p>Detailed imaging of the brain and neurological structures.</p>
+              </div>
+            </article>
+            <article class="mri-scan-card">
+              <div class="mri-scan-icon"><img src="./images/icons/SpineMRI.png" alt="" /></div>
+              <div class="mri-scan-content">
+                <h3>Spine MRI</h3>
+                <p>Detailed evaluation of the spine, discs, and surrounding structures.</p>
+              </div>
+            </article>
+            <article class="mri-scan-card">
+              <div class="mri-scan-icon"><img src="./images/icons/KneeMRI.png" alt="" /></div>
+              <div class="mri-scan-content">
+                <h3>Knee MRI</h3>
+                <p>Imaging to assess the knee joint, cartilage, and soft tissues.</p>
+              </div>
+            </article>
+            <article class="mri-scan-card">
+              <div class="mri-scan-icon"><img src="./images/icons/ShoulderMRI.png" alt="" /></div>
+              <div class="mri-scan-content">
+                <h3>Shoulder MRI</h3>
+                <p>Evaluation of the shoulder joint, muscles, tendons, and ligaments.</p>
+              </div>
+            </article>
+            <article class="mri-scan-card">
+              <div class="mri-scan-icon"><img src="./images/icons/AbdomenMRI.png" alt="" /></div>
+              <div class="mri-scan-content">
+                <h3>Abdomen MRI</h3>
+                <p>Detailed imaging of abdominal organs and soft tissues.</p>
+              </div>
+            </article>
+            <article class="mri-scan-card">
+              <div class="mri-scan-icon"><img src="./images/icons/MRA.svg" alt="" /></div>
+              <div class="mri-scan-content">
+                <h3>MR Angiography (MRA)</h3>
+                <p>Imaging of blood vessels to assess circulation and vascular conditions.</p>
+              </div>
+            </article>
+          </div>
+          <div class="section-cta">
+            <button type="button" class="btn-book" data-open-booking data-scan="MRI">Book Now</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="center-heading">
+            <span class="eyebrow">WHY CHOOSE MDRC</span>
+            <h2>Why Choose Our MRI Centre?</h2>
+            <p>Advanced technology, expert care, and accurate results you can trust.</p>
+          </div>
+          <div class="feature-grid">
+            <div class="feature-card">
+              <div class="feature-icon"><img src="./images/choosingMRI/3T_MRI.png" alt="" /></div>
+              <div>
+                <h3>3T MRI Technology</h3>
+                <p>Advanced 3T MRI technology for superior imaging precision.</p>
+              </div>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon"><img src="./images/choosingMRI/HighResolutionImage.png" alt="" /></div>
+              <div>
+                <h3>High-resolution Imaging</h3>
+                <p>Crystal-clear, high-resolution images for accurate diagnosis.</p>
+              </div>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon"><img src="./images/choosingMRI/ExperiencedRadiologists.png" alt="" /></div>
+              <div>
+                <h3>Experienced Radiologists</h3>
+                <p>Expert radiologists delivering trusted and precise interpretations.</p>
+              </div>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon"><img src="./images/choosingMRI/AccurateReporting.png" alt="" /></div>
+              <div>
+                <h3>Faster & Accurate Reporting</h3>
+                <p>Quick, reliable reports to support timely medical decisions.</p>
+              </div>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon"><img src="./images/choosingMRI/Patient_Friendly.png" alt="" /></div>
+              <div>
+                <h3>Patient-friendly Environment</h3>
+                <p>A comfortable, caring, and stress-free experience for every patient.</p>
+              </div>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon"><img src="./images/choosingMRI/Advanced_Expertise.png" alt="" /></div>
+              <div>
+                <h3>Advanced Diagnostic Expertise</h3>
+                <p>Cutting-edge diagnostic expertise backed by clinical experience.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-blue-light">
+        <div class="container">
+          <div class="center-heading">
+            <span class="eyebrow">BEFORE YOUR MRI</span>
+            <h2>MRI Scan Preparation</h2>
+            <p>Follow simple preparation guidelines to ensure a safe, smooth, and accurate scan.</p>
+          </div>
+          <div class="steps-grid">
+            <div class="step-card">
+              <span class="step-number">01</span>
+              <div class="step-icon"><img src="./images/scannningPrepration/bookAppointment.svg" alt="" /></div>
+              <h3>Book Appointment</h3>
+              <p>Schedule your MRI at a convenient time before you visit the centre.</p>
+            </div>
+            <div class="step-card">
+              <span class="step-number">02</span>
+              <div class="step-icon"><img src="./images/scannningPrepration/carryPrevious.jpeg" alt="" /></div>
+              <h3>Carry Previous Reports with Doctor Prescription</h3>
+              <p>Bring previous reports and your doctor’s prescription for the scan.</p>
+            </div>
+            <div class="step-card">
+              <span class="step-number">03</span>
+              <div class="step-icon"><img src="./images/scannningPrepration/informRadiologists.jpeg" alt="" /></div>
+              <h3>Inform the Radiologist</h3>
+              <p>Inform the team about implants or medical devices.</p>
+            </div>
+            <div class="step-card">
+              <span class="step-number">04</span>
+              <div class="step-icon"><img src="./images/scannningPrepration/followInstructions.jpeg" alt="" /></div>
+              <h3>Follow Instructions</h3>
+              <p>Follow fasting instructions, if applicable.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="center-heading">
+            <span class="eyebrow">OUR EXPERTS</span>
+            <h2>Our Radiologists</h2>
+          </div>
+          <div class="doctor-slider">
+            <button type="button" class="doctor-arrow doctor-arrow-left" aria-label="Previous doctors">‹</button>
+            <div class="doctor-grid" id="doctor-grid">
+              <article class="doctor-card">
+                <div class="doctor-photo"><img src="./images/DevendraSingh.png" alt="Dr. Devendra Singh Yadav" /></div>
+                <div class="doctor-info"><h3>Dr. Devendra Singh Yadav</h3><p>Managing Director</p></div>
+              </article>
+              <article class="doctor-card">
+                <div class="doctor-photo"><img src="./images/DeepaliYadav.png" alt="Dr. Deepali Yadav" /></div>
+                <div class="doctor-info"><h3>Dr. Deepali Yadav</h3><p>Director & Sr. Consultant - Radiology</p></div>
+              </article>
+              <article class="doctor-card">
+                <div class="doctor-photo"><img src="./images/NitinKumar.png" alt="Dr. Nitin Kumar" /></div>
+                <div class="doctor-info"><h3>Dr. Nitin Kumar</h3><p>Director & Sr. Consultant - Radiology & Imaging</p></div>
+              </article>
+              <article class="doctor-card">
+                <div class="doctor-photo"><img src="./images/AnkitKataria.png" alt="Dr. Ankit Kataria" /></div>
+                <div class="doctor-info"><h3>Dr. Ankit Kataria</h3><p>Sr. Consultant Radiologist</p></div>
+              </article>
+              <article class="doctor-card">
+                <div class="doctor-photo"><img src="./images/GarimaYadav.png" alt="Dr. Garima Yadav" /></div>
+                <div class="doctor-info"><h3>Dr. Garima Yadav</h3><p>Sr. Consultant Radiologist</p></div>
+              </article>
+              <article class="doctor-card">
+                <div class="doctor-photo"><img src="./images/RajatGarg.png" alt="Dr. Rajat Garg" /></div>
+                <div class="doctor-info"><h3>Dr. Rajat Garg</h3><p>Sr. Consultant Radiologist</p></div>
+              </article>
+              <article class="doctor-card">
+                <div class="doctor-photo"><img src="./images/PadmaChauhan.png" alt="Dr. Padma Chauhan" /></div>
+                <div class="doctor-info"><h3>Dr. Padma Chauhan</h3><p>Sr. Consultant Radiologist</p></div>
+              </article>
+              <article class="doctor-card">
+                <div class="doctor-photo"><img src="./images/RashmiKumari.png" alt="Dr. Rashmi Kumari" /></div>
+                <div class="doctor-info"><h3>Dr. Rashmi Kumari</h3><p>Sr. Consultant Radiologist</p></div>
+              </article>
+            </div>
+            <button type="button" class="doctor-arrow doctor-arrow-right" aria-label="Next doctors">›</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-light">
+        <div class="container">
+          <div class="center-heading">
+            <span class="eyebrow">OUR NETWORK</span>
+            <h2>Trusted Diagnostic Network Across Gurugram</h2>
+          </div>
+          <div class="location-grid">
+            <article class="location-card">
+              <div class="location-image"><img src="./images/lab-sector40.jpg" alt="MDRC Sector 40 centre" /></div>
+              <div class="location-content">
+                <span class="location-label">GURUGRAM - Sec 40</span>
+                <h3>Modern Diagnostic & Research Centre, Sector-40, Gurugram</h3>
+                <p>1057P, Sector-40, Gurugram, Haryana – 122002</p>
+              </div>
+            </article>
+            <article class="location-card">
+              <div class="location-image"><img src="./images/lab-nrr.jpg" alt="MDRC New Railway Road centre" /></div>
+              <div class="location-content">
+                <span class="location-label">GURGAON - New Railway Road</span>
+                <h3>Modern Diagnostic & Research Centre, NRR, Gurugram</h3>
+                <p>363-364/4, Sector-12, New Railway Road, Gurugram – 122001, Haryana, India</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="center-heading">
+            <span class="eyebrow">DIAGNOSTIC SERVICES</span>
+            <h2>Our Services</h2>
+          </div>
+          <div class="services-grid">
+            <button type="button" class="simple-service" data-open-booking data-scan="PET-CT / SPECT-CT"><img class="simple-service-icon" src="./images/services/icon-petct.svg" alt="" /><span>PET-CT / SPECT-CT</span></button>
+            <button type="button" class="simple-service" data-open-booking data-scan="MRI"><img class="simple-service-icon" src="./images/services/icon-mri.svg" alt="" /><span>MRI</span></button>
+            <button type="button" class="simple-service" data-open-booking data-scan="MRI"><img class="simple-service-icon" src="./images/services/icon-ct.svg" alt="" /><span>CT Scan</span></button>
+            <button type="button" class="simple-service" data-open-booking data-scan="CBCT"><img class="simple-service-icon" src="./images/services/icon-cbct.svg" alt="" /><span>CBCT</span></button>
+            <button type="button" class="simple-service" data-open-booking data-scan="Ultrasound"><img class="simple-service-icon" src="./images/services/icon-ultrasound.svg" alt="" /><span>Ultrasound</span></button>
+            <button type="button" class="simple-service" data-open-booking data-scan="X-Ray"><img class="simple-service-icon" src="./images/services/icon-xray.svg" alt="" /><span>X-Ray</span></button>
+            <button type="button" class="simple-service" data-open-booking data-scan="Mammography"><img class="simple-service-icon" src="./images/services/icon-mammo.svg" alt="" /><span>Mammography</span></button>
+            <button type="button" class="simple-service" data-open-booking><img class="simple-service-icon" src="./images/services/icon-pathology.svg" alt="" /><span>Pathology</span></button>
+            <button type="button" class="simple-service" data-open-booking><img class="simple-service-icon" src="./images/services/icon-checkup.svg" alt="" /><span>Health Checkups</span></button>
+            <button type="button" class="simple-service" data-open-booking><img class="simple-service-icon" src="./images/services/icon-other.svg" alt="" /><span>Other Services</span></button>
+          </div>
+        </div>
+        <div class="final-cta services-cta">
+          <div class="container final-cta-inner">
+            <div>
+              <h2>Need a diagnostic scan in Gurugram?</h2>
+              <p>Book MRI, PET-CT / SPECT-CT, Ultrasound, CBCT, Mammography, X-Ray and other scans with experienced radiology professionals at MDRC.</p>
+            </div>
+            <div class="final-buttons">
+              <button type="button" class="btn-book btn-white-book" data-open-booking>Book Now</button>
+              <a href="tel:01246712000" class="header-call"><img src="./images/call.png" alt="" /><span>Call Now</span></a>
+              <a href="https://wa.me/918586988847" class="header-whatsapp" target="_blank" rel="noopener noreferrer"><img src="./images/whatsapp.png" alt="" /><span>WhatsApp</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-dark">
+        <div class="container trust-image-grid">
+          <div class="trust-image-wrapper">
+            <img src="./images/PatientTrust.jpeg" alt="Patient receiving diagnostic imaging care" />
+          </div>
+          <div class="trust-content">
+            <span class="eyebrow eyebrow-light">PATIENT EXPERIENCE</span>
+            <h2>Why Patients Trust Us</h2>
+            <ul class="trust-list">
+              <li><span>✓</span><p>Advanced diagnostic technology</p></li>
+              <li><span>✓</span><p>Experienced professionals</p></li>
+              <li><span>✓</span><p>Patient-focused environment</p></li>
+              <li><span>✓</span><p>Reliable diagnostic services</p></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container faq-container">
+          <div class="center-heading">
+            <span class="eyebrow">FREQUENTLY ASKED QUESTIONS</span>
+            <h2>MRI Scan FAQs</h2>
+          </div>
+          <details class="faq-item">
+            <summary>What is an MRI scan? <span class="faq-plus">+</span></summary>
+            <p>An MRI (Magnetic Resonance Imaging) scan is an advanced, non-invasive imaging test that uses magnetic fields and radio waves to create detailed images of organs, tissues, joints, the brain, spine, and other parts of the body. It helps doctors detect and evaluate a wide range of medical conditions.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How much does an MRI cost in Gurugram? <span class="faq-plus">+</span></summary>
+            <p>The cost of an MRI scan in Gurugram depends on the body part being examined, the type of MRI, and whether contrast is required. At MDRC India, MRI scan prices vary by examination. Contact us for the latest MRI scan price and available packages.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How long does an MRI take? <span class="faq-plus">+</span></summary>
+            <p>Most MRI scans take approximately 20 to 60 minutes, depending on the body part being examined and the type of scan. More complex or contrast-enhanced MRI examinations may take longer.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Is MRI painful? <span class="faq-plus">+</span></summary>
+            <p>No. An MRI scan is generally painless and non-invasive. You will need to remain still while the scan is performed. Some patients may find the enclosed space uncomfortable, but our team helps make the procedure as comfortable as possible.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can I eat before an MRI? <span class="faq-plus">+</span></summary>
+            <p>It depends on the type of MRI you are having. Some MRI scans require no special preparation, while certain examinations or contrast-enhanced scans may require fasting. Our team will provide you with specific preparation instructions before your appointment.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Is MRI safe? <span class="faq-plus">+</span></summary>
+            <p>MRI is considered a safe imaging technique because it does not use ionizing radiation, unlike X-rays and CT scans. However, because MRI uses a strong magnetic field, you should inform the radiology team about any implants, metal devices, or other relevant medical information before the scan.</p>
+          </details>
+          <details class="faq-item">
+            <summary>When will I receive my MRI report? <span class="faq-plus">+</span></summary>
+            <p>The reporting time depends on the type and complexity of the MRI examination. MDRC India aims to provide reports promptly, and the expected reporting time will be communicated to you at the time of your appointment.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do I need a doctor's prescription? <span class="faq-plus">+</span></summary>
+            <p>A doctor's prescription or referral may be recommended depending on the MRI examination and your medical requirements. It is best to consult your doctor to determine whether an MRI is appropriate and which type of scan is required.</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="final-cta" id="contact">
+        <div class="container final-cta-inner">
+          <div>
+            <h2>Need an MRI Scan in Gurugram?</h2>
+            <p>Book your MRI scan at MDRC India and get access to advanced diagnostic imaging with experienced radiology professionals.</p>
+          </div>
+          <div class="final-buttons">
+            <button type="button" class="btn-book btn-white-book" data-open-booking data-scan="MRI">Book Now</button>
+            <a href="tel:01246712000" class="header-call"><img src="./images/call.png" alt="" /><span>Call Now</span></a>
+            <a href="https://wa.me/918586988847" class="header-whatsapp" target="_blank" rel="noopener noreferrer"><img src="./images/whatsapp.png" alt="" /><span>WhatsApp</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-logo">
+          <a href="https://www.mdrcindia.com/" class="logo">
+            <img src="./images/images.png" alt="Modern Diagnostic & Research Centre" />
+          </a>
+        </div>
+        <div class="footer-meta">
+          <a class="footer-link" href="https://www.mdrcindia.com/page/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+          <p>©2024 All right reserved. Modern Diagnostic & Research Centre Limited.</p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="mobile-sticky-cta">
+      <a href="tel:01246712000" class="header-call"><img src="./images/call.png" alt="" /><span>Call</span></a>
+      <button type="button" class="btn-book" data-open-booking>Book Now</button>
+    </div>
+
+    <div class="booking-overlay" id="booking-overlay" hidden>
+      <div class="booking-modal" role="dialog" aria-modal="true" aria-labelledby="booking-title">
+        <button type="button" class="booking-close" data-close-booking aria-label="Close booking form">×</button>
+        <div id="booking-form-view">
+          <p class="eyebrow">BOOK APPOINTMENT</p>
+          <h2 id="booking-title">Book your scan</h2>
+          <p class="booking-lead">Share your details and we will help you schedule at the nearest MDRC centre.</p>
+          <form class="booking-form" id="booking-form">
+            <label>Full name<input name="name" required autocomplete="name" /></label>
+            <label>Phone number<input name="phone" type="tel" required autocomplete="tel" /></label>
+            <label>Email (optional)<input name="email" type="email" autocomplete="email" /></label>
+            <label>Scan type
+              <select name="scan" id="scan-type">
+                <option>MRI</option>
+                <option>PET-CT / SPECT-CT</option>
+                <option>Ultrasound</option>
+                <option>CBCT</option>
+                <option>Mammography</option>
+                <option>X-Ray</option>
+              </select>
+            </label>
+            <label class="booking-full">Message (optional)<textarea name="message" rows="3"></textarea></label>
+            <button type="submit" class="btn-book booking-submit">Submit request</button>
+          </form>
+        </div>
+        <div class="booking-success" id="booking-success" hidden>
+          <h2>Request sent</h2>
+          <p>Thank you. Our team will contact you shortly to confirm your appointment.</p>
+          <button type="button" class="btn-book" data-close-booking>Close</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+const WHATSAPP_HREF = "https://wa.me/918586988847";
+const SCAN_TYPES = ["MRI", "PET-CT / SPECT-CT", "Ultrasound", "CBCT", "Mammography", "X-Ray"];
+
+const overlay = document.getElementById("booking-overlay");
+const form = document.getElementById("booking-form");
+const formView = document.getElementById("booking-form-view");
+const successView = document.getElementById("booking-success");
+const scanSelect = document.getElementById("scan-type");
+
+function openBooking(scan) {
+  const next = SCAN_TYPES.includes(scan) ? scan : "MRI";
+  scanSelect.value = next;
+  formView.hidden = false;
+  successView.hidden = true;
+  overlay.hidden = false;
+  document.body.style.overflow = "hidden";
+}
+
+function closeBooking() {
+  overlay.hidden = true;
+  document.body.style.overflow = "";
+  form.reset();
+  formView.hidden = false;
+  successView.hidden = true;
+}
+
+document.querySelectorAll("[data-open-booking]").forEach((el) => {
+  el.addEventListener("click", () => openBooking(el.getAttribute("data-scan") || "MRI"));
+});
+
+document.querySelectorAll("[data-close-booking]").forEach((el) => {
+  el.addEventListener("click", closeBooking);
+});
+
+overlay.addEventListener("click", (event) => {
+  if (event.target === overlay) closeBooking();
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && !overlay.hidden) closeBooking();
+});
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const data = new FormData(form);
+  const text = [
+    "Scan Booking Request",
+    `Name: ${data.get("name")}`,
+    `Phone: ${data.get("phone")}`,
+    data.get("email") ? `Email: ${data.get("email")}` : null,
+    `Scan: ${data.get("scan")}`,
+    data.get("message") ? `Message: ${data.get("message")}` : null,
+  ]
+    .filter(Boolean)
+    .join("\n");
+
+  window.open(`${WHATSAPP_HREF}?text=${encodeURIComponent(text)}`, "_blank", "noopener,noreferrer");
+  formView.hidden = true;
+  successView.hidden = false;
+});
+
+const doctorGrid = document.getElementById("doctor-grid");
+const scrollAmount = () => {
+  const card = doctorGrid.querySelector(".doctor-card");
+  if (!card) return 300;
+  const gap = parseFloat(getComputedStyle(doctorGrid).gap) || 20;
+  return card.getBoundingClientRect().width + gap;
+};
+
+document.querySelector(".doctor-arrow-left")?.addEventListener("click", () => {
+  doctorGrid.scrollBy({ left: -scrollAmount(), behavior: "smooth" });
+});
+document.querySelector(".doctor-arrow-right")?.addEventListener("click", () => {
+  doctorGrid.scrollBy({ left: scrollAmount(), behavior: "smooth" });
+});
+
+    </script>
+  </body>
+</html>
