@@ -163,14 +163,15 @@ h1, h2, h3 {
 
 .header-call-copy {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1px;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
   line-height: 1.15;
 }
 
 .header-call-number {
-  font-size: 12px;
+  display: inline;
+  font-size: 13px;
   font-weight: 600;
 }
 
@@ -902,6 +903,7 @@ h1, h2, h3 {
   gap: 6px;
   font-size: 13px;
   font-weight: 600;
+  text-transform: none;
 }
 
 .booking-form input,
@@ -1015,10 +1017,6 @@ h1, h2, h3 {
 
   .header-call-number {
     display: none;
-  }
-
-  .header-call-copy {
-    align-items: center;
   }
 }
 
@@ -1451,7 +1449,7 @@ h1, h2, h3 {
         </div>
         <div class="footer-meta">
           <a class="footer-link" href="https://www.mdrcindia.com/page/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
-          <p>©2026, All rights reserved.</p>
+          <p>© 2026, All rights reserved.</p>
         </div>
       </div>
     </footer>
@@ -1478,14 +1476,13 @@ h1, h2, h3 {
                 <option>PET-CT / SPECT-CT</option>
                 <option>CT Scan</option>
                 <option>Ultrasound</option>
-                <option>CBCT</option>
                 <option>Mammography</option>
                 <option>X-Ray</option>
                 <option>Others</option>
               </select>
             </label>
             <label class="booking-full">Message (Optional)<textarea name="message" rows="3"></textarea></label>
-            <button type="submit" class="btn-book booking-submit">Submit request</button>
+            <button type="submit" class="btn-book booking-submit">Submit Request</button>
           </form>
         </div>
         <div class="booking-success" id="booking-success" hidden>
@@ -1498,7 +1495,7 @@ h1, h2, h3 {
 
     <script>
 const WHATSAPP_HREF = "https://wa.me/918586988847";
-const SCAN_TYPES = ["MRI", "PET-CT / SPECT-CT", "CT Scan", "Ultrasound", "CBCT", "Mammography", "X-Ray", "Others"];
+const SCAN_TYPES = ["MRI", "PET-CT / SPECT-CT", "CT Scan", "Ultrasound", "Mammography", "X-Ray", "Others"];
 
 const overlay = document.getElementById("booking-overlay");
 const form = document.getElementById("booking-form");
