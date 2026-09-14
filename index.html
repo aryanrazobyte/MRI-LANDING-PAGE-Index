@@ -161,6 +161,19 @@ h1, h2, h3 {
   filter: brightness(0) invert(1);
 }
 
+.header-call-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1px;
+  line-height: 1.15;
+}
+
+.header-call-number {
+  font-size: 12px;
+  font-weight: 600;
+}
+
 .hero {
   background: linear-gradient(120deg, #eef8fc 0%, #ffffff 68%);
   padding: 64px 0 72px;
@@ -999,6 +1012,14 @@ h1, h2, h3 {
   .site-header .btn-book {
     display: none;
   }
+
+  .header-call-number {
+    display: none;
+  }
+
+  .header-call-copy {
+    align-items: center;
+  }
 }
 
     </style>
@@ -1011,9 +1032,12 @@ h1, h2, h3 {
         </a>
         <div class="header-actions">
           <button type="button" class="btn-book" data-open-booking>Book Now</button>
-          <a href="tel:01246712000" class="header-call">
+          <a href="tel:+918586988847" class="header-call">
             <img src="./images/call.png" alt="" />
-            <span>Call Now</span>
+            <span class="header-call-copy">
+              <span>Call Now</span>
+              <span class="header-call-number">+91 85869 88847</span>
+            </span>
           </a>
           <a href="https://wa.me/918586988847" class="header-whatsapp" target="_blank" rel="noopener noreferrer">
             <img src="./images/whatsapp.png" alt="" />
@@ -1259,24 +1283,24 @@ h1, h2, h3 {
                 <div class="doctor-info"><h3>Dr. Nitin Kumar</h3><p>Director & Sr. Consultant - Radiology & Imaging</p></div>
               </article>
               <article class="doctor-card">
+                <div class="doctor-photo"><img src="./images/RashmiKumari.png" alt="Dr. Rashmi Kumari" /></div>
+                <div class="doctor-info"><h3>Dr. Rashmi Kumari</h3><p>Sr. Consultant Radiologist</p></div>
+              </article>
+              <article class="doctor-card">
                 <div class="doctor-photo"><img src="./images/AnkitKataria.png" alt="Dr. Ankit Kataria" /></div>
                 <div class="doctor-info"><h3>Dr. Ankit Kataria</h3><p>Sr. Consultant Radiologist</p></div>
               </article>
               <article class="doctor-card">
                 <div class="doctor-photo"><img src="./images/GarimaYadav.png" alt="Dr. Garima Yadav" /></div>
-                <div class="doctor-info"><h3>Dr. Garima Yadav</h3><p>Sr. Consultant Radiologist</p></div>
+                <div class="doctor-info"><h3>Dr. Garima Yadav</h3><p>Consultant Radiologist</p></div>
               </article>
               <article class="doctor-card">
                 <div class="doctor-photo"><img src="./images/RajatGarg.png" alt="Dr. Rajat Garg" /></div>
-                <div class="doctor-info"><h3>Dr. Rajat Garg</h3><p>Sr. Consultant Radiologist</p></div>
+                <div class="doctor-info"><h3>Dr. Rajat Garg</h3><p>Consultant Radiologist</p></div>
               </article>
               <article class="doctor-card">
                 <div class="doctor-photo"><img src="./images/PadmaChauhan.png" alt="Dr. Padma Chauhan" /></div>
-                <div class="doctor-info"><h3>Dr. Padma Chauhan</h3><p>Sr. Consultant Radiologist</p></div>
-              </article>
-              <article class="doctor-card">
-                <div class="doctor-photo"><img src="./images/RashmiKumari.png" alt="Dr. Rashmi Kumari" /></div>
-                <div class="doctor-info"><h3>Dr. Rashmi Kumari</h3><p>Sr. Consultant Radiologist</p></div>
+                <div class="doctor-info"><h3>Dr. Padma Chauhan</h3><p>Consultant Radiologist</p></div>
               </article>
             </div>
             <button type="button" class="doctor-arrow doctor-arrow-right" aria-label="Next doctors">›</button>
@@ -1320,14 +1344,14 @@ h1, h2, h3 {
           <div class="services-grid">
             <button type="button" class="simple-service" data-open-booking data-scan="PET-CT / SPECT-CT"><img class="simple-service-icon" src="./images/services/icon-petct.svg" alt="" /><span>PET-CT / SPECT-CT</span></button>
             <button type="button" class="simple-service" data-open-booking data-scan="MRI"><img class="simple-service-icon" src="./images/services/icon-mri.svg" alt="" /><span>MRI</span></button>
-            <button type="button" class="simple-service" data-open-booking data-scan="MRI"><img class="simple-service-icon" src="./images/services/icon-ct.svg" alt="" /><span>CT Scan</span></button>
+            <button type="button" class="simple-service" data-open-booking data-scan="CT Scan"><img class="simple-service-icon" src="./images/services/icon-ct.svg" alt="" /><span>CT Scan</span></button>
             <button type="button" class="simple-service" data-open-booking data-scan="CBCT"><img class="simple-service-icon" src="./images/services/icon-cbct.svg" alt="" /><span>CBCT</span></button>
             <button type="button" class="simple-service" data-open-booking data-scan="Ultrasound"><img class="simple-service-icon" src="./images/services/icon-ultrasound.svg" alt="" /><span>Ultrasound</span></button>
             <button type="button" class="simple-service" data-open-booking data-scan="X-Ray"><img class="simple-service-icon" src="./images/services/icon-xray.svg" alt="" /><span>X-Ray</span></button>
             <button type="button" class="simple-service" data-open-booking data-scan="Mammography"><img class="simple-service-icon" src="./images/services/icon-mammo.svg" alt="" /><span>Mammography</span></button>
-            <button type="button" class="simple-service" data-open-booking><img class="simple-service-icon" src="./images/services/icon-pathology.svg" alt="" /><span>Pathology</span></button>
-            <button type="button" class="simple-service" data-open-booking><img class="simple-service-icon" src="./images/services/icon-checkup.svg" alt="" /><span>Health Checkups</span></button>
-            <button type="button" class="simple-service" data-open-booking><img class="simple-service-icon" src="./images/services/icon-other.svg" alt="" /><span>Other Services</span></button>
+            <button type="button" class="simple-service" data-open-booking data-scan="Others"><img class="simple-service-icon" src="./images/services/icon-pathology.svg" alt="" /><span>Pathology</span></button>
+            <button type="button" class="simple-service" data-open-booking data-scan="Others"><img class="simple-service-icon" src="./images/services/icon-checkup.svg" alt="" /><span>Health Checkups</span></button>
+            <button type="button" class="simple-service" data-open-booking data-scan="Others"><img class="simple-service-icon" src="./images/services/icon-other.svg" alt="" /><span>Other Services</span></button>
           </div>
         </div>
         <div class="final-cta services-cta">
@@ -1338,7 +1362,7 @@ h1, h2, h3 {
             </div>
             <div class="final-buttons">
               <button type="button" class="btn-book btn-white-book" data-open-booking>Book Now</button>
-              <a href="tel:01246712000" class="header-call"><img src="./images/call.png" alt="" /><span>Call Now</span></a>
+              <a href="tel:+918586988847" class="header-call"><img src="./images/call.png" alt="" /><span class="header-call-copy"><span>Call Now</span><span class="header-call-number">+91 85869 88847</span></span></a>
               <a href="https://wa.me/918586988847" class="header-whatsapp" target="_blank" rel="noopener noreferrer"><img src="./images/whatsapp.png" alt="" /><span>WhatsApp</span></a>
             </div>
           </div>
@@ -1412,7 +1436,7 @@ h1, h2, h3 {
           </div>
           <div class="final-buttons">
             <button type="button" class="btn-book btn-white-book" data-open-booking data-scan="MRI">Book Now</button>
-            <a href="tel:01246712000" class="header-call"><img src="./images/call.png" alt="" /><span>Call Now</span></a>
+            <a href="tel:+918586988847" class="header-call"><img src="./images/call.png" alt="" /><span class="header-call-copy"><span>Call Now</span><span class="header-call-number">+91 85869 88847</span></span></a>
             <a href="https://wa.me/918586988847" class="header-whatsapp" target="_blank" rel="noopener noreferrer"><img src="./images/whatsapp.png" alt="" /><span>WhatsApp</span></a>
           </div>
         </div>
@@ -1428,13 +1452,13 @@ h1, h2, h3 {
         </div>
         <div class="footer-meta">
           <a class="footer-link" href="https://www.mdrcindia.com/page/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
-          <p>©2024 All right reserved. Modern Diagnostic & Research Centre Limited.</p>
+          <p>©2026, All rights reserved.</p>
         </div>
       </div>
     </footer>
 
     <div class="mobile-sticky-cta">
-      <a href="tel:01246712000" class="header-call"><img src="./images/call.png" alt="" /><span>Call</span></a>
+      <a href="tel:+918586988847" class="header-call"><img src="./images/call.png" alt="" /><span>Call</span></a>
       <button type="button" class="btn-book" data-open-booking>Book Now</button>
     </div>
 
@@ -1446,20 +1470,22 @@ h1, h2, h3 {
           <h2 id="booking-title">Book your scan</h2>
           <p class="booking-lead">Share your details and we will help you schedule at the nearest MDRC centre.</p>
           <form class="booking-form" id="booking-form">
-            <label>Full name<input name="name" required autocomplete="name" /></label>
-            <label>Phone number<input name="phone" type="tel" required autocomplete="tel" /></label>
-            <label>Email (optional)<input name="email" type="email" autocomplete="email" /></label>
-            <label>Scan type
+            <label>Full Name<input name="name" required autocomplete="name" /></label>
+            <label>Phone Number<input name="phone" type="tel" required autocomplete="tel" /></label>
+            <label>Email (Optional)<input name="email" type="email" autocomplete="email" /></label>
+            <label>Scan Type
               <select name="scan" id="scan-type">
                 <option>MRI</option>
                 <option>PET-CT / SPECT-CT</option>
+                <option>CT Scan</option>
                 <option>Ultrasound</option>
                 <option>CBCT</option>
                 <option>Mammography</option>
                 <option>X-Ray</option>
+                <option>Others</option>
               </select>
             </label>
-            <label class="booking-full">Message (optional)<textarea name="message" rows="3"></textarea></label>
+            <label class="booking-full">Message (Optional)<textarea name="message" rows="3"></textarea></label>
             <button type="submit" class="btn-book booking-submit">Submit request</button>
           </form>
         </div>
@@ -1473,7 +1499,7 @@ h1, h2, h3 {
 
     <script>
 const WHATSAPP_HREF = "https://wa.me/918586988847";
-const SCAN_TYPES = ["MRI", "PET-CT / SPECT-CT", "Ultrasound", "CBCT", "Mammography", "X-Ray"];
+const SCAN_TYPES = ["MRI", "PET-CT / SPECT-CT", "CT Scan", "Ultrasound", "CBCT", "Mammography", "X-Ray", "Others"];
 
 const overlay = document.getElementById("booking-overlay");
 const form = document.getElementById("booking-form");
