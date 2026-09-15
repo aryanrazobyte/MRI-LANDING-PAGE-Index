@@ -901,6 +901,10 @@ h1, h2, h3 {
   text-transform: none;
 }
 
+.required-mark {
+  color: #d32f2f;
+}
+
 .booking-form input,
 .booking-form select,
 .booking-form textarea {
@@ -1469,10 +1473,10 @@ h1, h2, h3 {
           <h2 id="booking-title">Book your scan</h2>
           <p class="booking-lead">Share your details and we will help you schedule at the nearest MDRC centre.</p>
           <form class="booking-form" id="booking-form">
-            <label>Full Name
+            <label><span>Full Name <span class="required-mark">*</span></span>
               <input name="name" required minlength="2" maxlength="60" autocomplete="name" pattern="[A-Za-z][A-Za-z .']{1,59}" title="Please enter a valid name using letters only." />
             </label>
-            <label>Mobile Number
+            <label><span>Mobile Number <span class="required-mark">*</span></span>
               <input name="phone" type="tel" required inputmode="numeric" autocomplete="tel" minlength="10" maxlength="10" pattern="[6-9][0-9]{9}" title="Please enter a 10-digit mobile number." />
             </label>
             <label>Email (Optional)
