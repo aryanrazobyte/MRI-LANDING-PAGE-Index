@@ -910,6 +910,29 @@ h1, h2, h3 {
   font-size: 14px;
 }
 
+.booking-form input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  padding: 0;
+  border: 0;
+  accent-color: var(--primary);
+  flex-shrink: 0;
+}
+
+.booking-terms {
+  grid-column: 1 / -1;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+  font-weight: 500;
+}
+
+.booking-terms a {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
 .booking-full,
 .booking-submit {
   grid-column: 1 / -1;
@@ -1021,7 +1044,7 @@ h1, h2, h3 {
     <header class="site-header">
       <div class="container header-inner">
         <a href="https://www.mdrcindia.com/" class="logo">
-          <img src="./images/images.webp" alt="Modern Diagnostic & Research Centre" />
+          <img src="./images/mdrc-logo.webp" alt="Modern Diagnostic & Research Centre" />
         </a>
         <div class="header-actions">
           <button type="button" class="btn-book" data-open-booking>Book Now</button>
@@ -1423,7 +1446,7 @@ h1, h2, h3 {
       <div class="container footer-inner">
         <div class="footer-logo">
           <a href="https://www.mdrcindia.com/" class="logo">
-            <img src="./images/images.webp" alt="Modern Diagnostic & Research Centre" />
+            <img src="./images/mdrc-logo.webp" alt="Modern Diagnostic & Research Centre" />
           </a>
         </div>
         <div class="footer-meta">
@@ -1447,10 +1470,10 @@ h1, h2, h3 {
           <p class="booking-lead">Share your details and we will help you schedule at the nearest MDRC centre.</p>
           <form class="booking-form" id="booking-form">
             <label>Full Name
-              <input name="name" required minlength="2" autocomplete="name" />
+              <input name="name" required minlength="2" maxlength="60" autocomplete="name" pattern="[A-Za-z][A-Za-z .']{1,59}" title="Please enter a valid name using letters only." />
             </label>
             <label>Mobile Number
-              <input name="phone" type="tel" required inputmode="numeric" autocomplete="tel" minlength="10" maxlength="15" pattern="[0-9+\s-]{10,15}" />
+              <input name="phone" type="tel" required inputmode="numeric" autocomplete="tel" minlength="10" maxlength="10" pattern="[6-9][0-9]{9}" title="Please enter a 10-digit mobile number." />
             </label>
             <label>Email (Optional)
               <input name="email" type="email" autocomplete="email" />
@@ -1468,6 +1491,10 @@ h1, h2, h3 {
             </label>
             <label class="booking-full">Message (Optional)
               <textarea name="message" rows="3"></textarea>
+            </label>
+            <label class="booking-terms">
+              <input name="terms" type="checkbox" required checked />
+              <span>I agree to the <a href="https://www.mdrcindia.com/page/privacy-policy" target="_blank" rel="noopener noreferrer">Terms And Conditions</a>.</span>
             </label>
             <button type="submit" class="btn-book booking-submit">Submit Request</button>
           </form>
@@ -1503,6 +1530,7 @@ function closeBooking() {
   overlay.hidden = true;
   document.body.style.overflow = "";
   form.reset();
+  form.querySelector('[name="terms"]').checked = true;
   formView.hidden = false;
   successView.hidden = true;
 }
@@ -1523,22 +1551,42 @@ document.addEventListener("keydown", (event) => {
   if (event.key === "Escape" && !overlay.hidden) closeBooking();
 });
 
+const nameInput = form.querySelector('[name="name"]');
+const phoneInput = form.querySelector('[name="phone"]');
+const termsInput = form.querySelector('[name="terms"]');
+
+nameInput.addEventListener("input", () => {
+  nameInput.value = nameInput.value.replace(/[^A-Za-z .']/g, "").replace(/\s+/g, " ");
+});
+
+phoneInput.addEventListener("input", () => {
+  phoneInput.value = phoneInput.value.replace(/\D/g, "").slice(0, 10);
+});
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   const data = new FormData(form);
   const name = String(data.get("name") || "").trim();
   const phone = String(data.get("phone") || "").trim();
-  if (!name) {
-    form.querySelector('[name="name"]').reportValidity();
-    form.querySelector('[name="name"]').focus();
+  if (!/^[A-Za-z][A-Za-z .']{1,59}$/.test(name)) {
+    nameInput.setCustomValidity("Please enter a valid name using letters only.");
+    nameInput.reportValidity();
+    nameInput.focus();
+    nameInput.setCustomValidity("");
     return;
   }
-  if (!phone || phone.replace(/\D/g, "").length < 10) {
-    const phoneInput = form.querySelector('[name="phone"]');
-    phoneInput.setCustomValidity("Please enter a valid mobile number.");
+  if (!/^[6-9]\d{9}$/.test(phone)) {
+    phoneInput.setCustomValidity("Please enter a valid 10-digit mobile number.");
     phoneInput.reportValidity();
     phoneInput.focus();
     phoneInput.setCustomValidity("");
+    return;
+  }
+  if (!termsInput.checked) {
+    termsInput.setCustomValidity("Please accept the Terms And Conditions.");
+    termsInput.reportValidity();
+    termsInput.focus();
+    termsInput.setCustomValidity("");
     return;
   }
   const text = [
