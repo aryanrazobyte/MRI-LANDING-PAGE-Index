@@ -924,12 +924,17 @@ h1, h2, h3 {
   flex-shrink: 0;
 }
 
-.booking-terms {
+.booking-form label.booking-terms {
   grid-column: 1 / -1;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   gap: 10px;
   font-weight: 500;
+  line-height: 1.4;
+}
+
+.booking-form label.booking-terms input[type="checkbox"] {
+  margin-top: 0;
 }
 
 .booking-terms a {
